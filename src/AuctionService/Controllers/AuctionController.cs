@@ -63,6 +63,7 @@ namespace AuctionService.Controllers
             _context.Auctions.Add(auction);
 
             var result = await  _context.SaveChangesAsync() > 0;
+            
             if(!result)
             {
                 return BadRequest();
@@ -81,7 +82,7 @@ namespace AuctionService.Controllers
 
             var auction = await _context.Auctions.Include(i => i.Item).SingleOrDefaultAsync(a => a.Id ==id);
 
-            if(auction == null)
+            if(auction is null)
             {
                 return NotFound();
             }
@@ -107,13 +108,12 @@ namespace AuctionService.Controllers
         public async Task <ActionResult> DeleteAuction(Guid id)
         {
             var auction = await _context.Auctions.FindAsync(id);
+            
             if(auction is null)
             {
                 return NotFound();
             }
-            
             //todo: check seller == usernname
-
             _context.Auctions.Remove (auction);
             
             var result = await _context.SaveChangesAsync () > 0;
