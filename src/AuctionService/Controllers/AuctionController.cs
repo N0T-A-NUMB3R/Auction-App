@@ -136,7 +136,8 @@ namespace AuctionService.Controllers
             {
                 return NotFound();
             }
-            //todo: check seller == usernname
+            
+              //todo: check seller == usernname
             _context.Auctions.Remove (auction);
             
             var result = await _context.SaveChangesAsync () > 0;

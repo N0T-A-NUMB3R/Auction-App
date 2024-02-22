@@ -22,10 +22,8 @@ namespace SearchService.Services
                 .ExecuteFirstAsync();
 
 
-            var x =  await _httpClient.GetFromJsonAsync<List<Item>>(_config["AuctionServiceUrl"] 
+            return  await _httpClient.GetFromJsonAsync<List<Item>>(_config["AuctionServiceUrl"] 
                 + "/api/auctions");
-
-            return x;
 
         }
     }
