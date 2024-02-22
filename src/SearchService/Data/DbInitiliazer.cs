@@ -31,9 +31,7 @@ namespace SearchService.Data
             {
                 await DB.SaveAsync(items);
             }
-
-        }
-        
+        }  
     }
 }    
         

@@ -17,14 +17,15 @@ namespace SearchService.Services
         public async Task<List<Item>> GetItemsForSearchDb()
         {
             var lastUpdated = await DB.Find<Item, string>()
-                .Sort(x => x.Descending(x => x.UpdatedAt))
-                .Project(x => x.UpdatedAt.ToString())
+                .Sort(x => x.Descending(x => x.CreatedAt))
+                .Project(x => x.CreatedAt.ToString())
                 .ExecuteFirstAsync();
 
 
-            return await _httpClient.GetFromJsonAsync<List<Item>>(_config["AuctionServiceUrl"] 
-                + "/api/auctions?date=" + lastUpdated);
+            var x =  await _httpClient.GetFromJsonAsync<List<Item>>(_config["AuctionServiceUrl"] 
+                + "/api/auctions");
 
+            return x;
 
         }
     }
