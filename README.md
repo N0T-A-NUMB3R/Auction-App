@@ -1,4 +1,7 @@
 Auction App
+
+
+
 ![prova (2)](https://github.com/N0T-A-NUMB3R/AuctionApp/assets/32098270/03d5fe90-89ce-475c-9e54-cdc5e719e4d2)
 
 
