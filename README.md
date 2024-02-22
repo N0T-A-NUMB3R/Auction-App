@@ -1,5 +1,6 @@
 Auction App
-![prova](https://github.com/N0T-A-NUMB3R/AuctionApp/assets/32098270/eb0953fe-16ba-4096-8305-bbde7c579c44)
+![prova (2)](https://github.com/N0T-A-NUMB3R/AuctionApp/assets/32098270/03d5fe90-89ce-475c-9e54-cdc5e719e4d2)
+
 
 a microservices based app using .Net, RabbitMQ running on Docker😎
 
