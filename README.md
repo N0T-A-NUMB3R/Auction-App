@@ -1,7 +1,8 @@
 Auction App
+![prova](https://github.com/N0T-A-NUMB3R/AuctionApp/assets/32098270/eb0953fe-16ba-4096-8305-bbde7c579c44)
 
-a microservices based app using .Net, IdentityServer, RabbitMQ running on Docker😎
-![image](https://github.com/N0T-A-NUMB3R/Carsties/assets/32098270/b302b60c-c90a-4034-9efc-f75092759b5a)
+a microservices based app using .Net, RabbitMQ running on Docker😎
+
 
 SERVICES OVERVIEW:
 
